@@ -73,3 +73,11 @@ DATA: BIOL5504_gomes_dataset.csv
 
 This second week, I have explored my data by using tidy format function. I omitted my NA values to fix those mistakes in my data. I ran sumarise and mutate functions to check for differences in my grouping (age, gender and fish consumption during the low season for fish). 
 
+##WEEK 3###
+
+CODE : biol5504_Week3_XXXXXXXX.R 
+
+DATA: BIOL5504_gomes_dataset.csv
+
+This third week, I have explored the use of ggplot. That included plotting data (continuous and categorical), overlaying them with colors and shapes, customizing colors, scale and labels of graphs.  
+
