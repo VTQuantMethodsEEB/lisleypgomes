@@ -75,7 +75,7 @@ This second week, I have explored my data by using tidy format function. I omitt
 
 ##WEEK 3###
 
-CODE : biol5504_Week3_XXXXXXXX.R 
+CODE : biol5504_Week3_DataVisualization.R 
 
 DATA: BIOL5504_gomes_dataset.csv
 
