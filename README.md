@@ -79,5 +79,5 @@ CODE : biol5504_Week3_DataVisualization.R
 
 DATA: BIOL5504_gomes_dataset.csv
 
-This third week, I have explored the use of ggplot. That included plotting data (continuous and categorical), overlaying them with colors and shapes, customizing colors, scale and labels of graphs.  
+This third week, I have explored the use of ggplot. That included plotting data (continuous and categorical), overlaying them with colors and shapes, customizing colors, scale and labels of graphs. Specifically, I wanted to understand the relationship of the amount of beef consumed according to the size of the municipality and if the person has lived or not in rural area. 
 
