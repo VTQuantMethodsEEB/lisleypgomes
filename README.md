@@ -2,7 +2,7 @@
 
  #Data Description
  
-  The .csv file named “BIOL5504_gomes_dataset.csv” is a four-tabs-spreadsheet containing data collected by Dr. Willandia Chaves from the Department of Fish and Wildlife Conservation of Virginia Tech in 2018 and 2019 in several urban and rural areas in the Brazilian Amazon. The data is related to a study of consumption and taste preference for wild (hereafter referred as fish meat) and domestic meat (hereafter referred as beef) in areas under different levels of urbanization. The data was obtained through household surveys, so the unit of analysis in this study is the response given by the household member. In this survey study, the response variables consisted of binary and count data for the consumption and ordinal data for the taste preference (please see details in the table below). The explanatory variables that could be used in this class include the level of urbanization (unit of analysis here is the municipality), which variables are both categorical and continuous, and socioeconomic factors of each respondent and household, which comprise of categorical, binary and continuous data (please see details in the table below). This data is related to my thesis as I will be conducting the same surveys over time, so I am willing to using this data to understand i) how the level of urbanization influences the consumption and preference of wild over domesticated meat and ii) what socioeconomic factors predicts the most the amount of wild and domestic meat consumed under different levels of urbanization.
+  The .csv file named “BIOL5504_gomes_dataset.csv” is a spreadsheet containing data collected by Dr. Willandia Chaves from the Department of Fish and Wildlife Conservation of Virginia Tech in 2018 and 2019 in several urban and rural areas in the Brazilian Amazon. The data is related to a study of consumption and taste preference for wild (hereafter referred as fish meat) and domestic meat (hereafter referred as beef) in areas under different levels of urbanization. The data was obtained through household surveys, so the unit of analysis in this study is the response given by the household member. In this survey study, the response variables consisted of binary and count data for the consumption and ordinal data for the taste preference (please see details in the table below). The explanatory variables that could be used in this class include the level of urbanization (unit of analysis here is the municipality), which variables are both categorical and continuous, and socioeconomic factors of each respondent and household, which comprise of categorical, binary and continuous data (please see details in the table below). This data is related to my thesis as I will be conducting the same surveys over time, so I am willing to using this data to understand i) how the level of urbanization influences the consumption and preference of wild over domesticated meat and ii) what socioeconomic factors predicts the most the amount of wild and domestic meat consumed under different levels of urbanization.
 
 Description of variables (named as columns in the attached .csv file):
 
@@ -81,3 +81,14 @@ DATA: BIOL5504_gomes_dataset.csv
 
 This third week, I have explored the use of ggplot. That included plotting data (continuous and categorical), overlaying them with colors and shapes, customizing colors, scale and labels of graphs. Specifically, I wanted to understand the relationship of the amount of beef consumed according to the size of the municipality and if the person has lived or not in rural area. 
 
+##WEEK 4###
+
+No coding this week.
+
+##WEEK 5###
+
+CODE : biol5504_Week5_Tests_assignment.R
+
+DATA: BIOL5504_gomes_dataset.csv
+
+This fifth week, I have explored doing permutations by using the function loop as well as performing some "classic" tests for two hypothesis concerning my data.
