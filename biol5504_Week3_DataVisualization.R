@@ -116,7 +116,10 @@ g6=ggplot(data=amazon_data,aes(x=town_cat,y=lgdL))+
   scale_colour_manual(values = c("#CC6666", "#66CC99"))+
   theme_bw()
 g6
-#this looks much better, but I'd like some additional options. I changed the color codes, but couldn't find a option for other color codes online.
+#this looks much better, but I'd like some additional options. 
+#I changed the color codes, but couldn't find a option for other color codes online.
+#Here's are resource for a ton of different color packages
+#https://twitter.com/moriah_taylor58/status/1395431000977649665
 
 g7=ggplot(data=amazon_data,aes(x=town_cat,y=lgdL))+
   geom_boxplot()+
