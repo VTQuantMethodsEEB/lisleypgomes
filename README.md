@@ -107,3 +107,28 @@ I did a Shapiro test to check normally from my model. My p-value was <.005 so co
 After to check normally, I plotted the relationship between beef consumption in kg and gender to visualize and confirm the results from the linear model that I did before.
 
 Then, I plotted the relationship in ggplot using stat_smooth (method = "linear")
+
+WEEK 8##
+#1. Make a linear model (with more than one variable) for one of your hypotheses. Articulate which hypothesis you are testing. #Consider the age in addition to gender of participants 
+
+#H2 = the beef consunptiom in kg is significantly different for gender and age of participants.
+#Output model results:
+
+The female gender is set as my intercept. There is no difference on beef consumption among gender (p > 0.005) and also no significantly varies over ages (p > 0.005).
+
+#2. Use an interactive model and an additive model. Explain what hypothesis each of these is testing, and what the R output is telling you about your data.
+
+#H2 = the beef consumption depends on age and gender of participants.
+
+I ran an interactive model where beef consumption was set as response variable and age and gender as a explanatory variables.
+
+
+Then, I ran allEffects function to check all average values from all my variable levels.
+
+#Output model results: The female gender is my intercept. The output shows that beef consumption not depends on age and gender of participantes, where there is not significantly difference between ages and genders.
+
+#3. Plot your model (e.g. using predict) and overlay the model on top of the underlying data.
+
+#Plot interpretation
+
+Beef consumption do not varies among gender and age. In the average, seems that people eat less beef does not matter the age or gender. 
