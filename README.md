@@ -92,3 +92,18 @@ CODE : biol5504_Week5_Tests_assignment.R
 DATA: BIOL5504_gomes_dataset.csv
 
 This fifth week, I have explored doing permutations by using the function loop as well as performing some "classic" tests for two hypothesis concerning my data.
+
+WEEK 7##
+CODE : Week7_8_LisleyGomes.R
+
+DATA: BIOL5504_gomes_dataset.csv
+
+I did a hypothesis that the beef consumption in kg is different among gender of participants
+
+To check my hypothesis, I did a simple linear model where beef consumption was my response variable and gender of participants was my explanatory variable.
+
+I did a Shapiro test to check normally from my model. My p-value was <.005 so confirming that my data does not follow a normal distribution.
+
+After to check normally, I plotted the relationship between beef consumption in kg and gender to visualize and confirm the results from the linear model that I did before.
+
+Then, I plotted the relationship in ggplot using stat_smooth (method = "linear")
