@@ -131,4 +131,62 @@ Then, I ran allEffects function to check all average values from all my variable
 
 #Plot interpretation
 
-Beef consumption do not varies among gender and age. In the average, seems that people eat less beef does not matter the age or gender. 
+Beef consumption do not varies among gender and age. In the average, seems that people eat less beef does not matter the age or gender.
+
+WEEK 10##
+CODE : Week10_LisleyGomes.R
+
+DATA: BIOL5504_gomes_dataset.csv
+
+I did a GLM model with negative binomial family based on the residual distribution that I got from last week.
+
+#H1 =  The beef consumption in kg is different among gender of participants across ages.
+
+
+#Explain what the R output is telling you about your data, in relation to your hypothesis.
+
+#Explanation = The beef consumption seems to be significant related to the age and gender.As my gender variable is categorical, my female gender is set as intercept. The beef consumption seen to depend on the gender, and this relationship is significant different when comparing across ages.
+
+Then, I plot my observed data and predict data overlap to see if they fits appropriately. I used predict function to see if my observed data fits well with predict values.
+
+WEEK 11##
+CODE : Week11_LisleyGomes.R
+
+DATA: BIOL5504_gomes_dataset.csv
+
+I did a GLM model with negative binomial family based on the residual distribution that I got from last week.
+
+#Likelihood ratio test
+
+For likelihood ratio tests, I used 3 models from my data:
+
+modelnull= a null model (beef consumed); 
+model= a simple model (beef consumed ~ gender); 
+model1= an additive model (beef consumed ~ gender + age);
+model2= an interactive model (beef consumed ~ gender*age).
+
+The likelihood ratio tests for model comparison shows the simple model is the one which has a lower difference in numbers of parameters. Based on the likelihood ratio test, gender model is my best model that explained the relationship between beef consumed and gender across ages.
+
+#Model selection
+
+#AIC model selection
+
+After ran each model structure, I checked model has the best weight based on dAIC. The interactive model (n4) showed the beef consumed and lower dAIC from the rank selection against the other model structures.
+
+#Extra #cross-validation
+
+For a model selection approach, I choose to use cross-validation function from the package caret. First, I set up the number of folds for cross-validation by defining the training control. I chose 10 folds, which means divide data into ten parts, and using model to predict the remaining 10%.
+
+I used my two models, one additive (model 1) and another interactive (model2). My model 2 accounts for 0.2% of the variance (R-squared = 0.02) in catch scores.
+
+WEEK 12##
+CODE : Week12_LisleyGomes.R
+
+DATA: BIOL5504_gomes_dataset.csv
+
+For this mixed model, I get the hypothesis that beef consumption depends on interaction between age and gender among participants, taking account and controlling the distribution of towns levels. Towns are considered as repeated samples units over surveys. So, I do include this explained variation in my model and make sure that it not influencing in my model output.
+
+I used, as previous weeks, a generalized linear model with a negative binomial distribution by using the package glmmTMB.
+
+Explanation: Beef consumption depends on the interaction between gender among participants. The interaction between age and gendr significantly affected the amount of beef consumed. Consumption from male has a significant difference compared to female, showing a higher consumption. 
+
