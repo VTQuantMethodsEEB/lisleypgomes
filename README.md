@@ -134,20 +134,20 @@ Then, I ran allEffects function to check all average values from all my variable
 Beef consumption do not varies among gender and age. In the average, seems that people eat less beef does not matter the age or gender.
 
 WEEK 10##
-CODE : Week10_LisleyGomes.R
+CODE : Week10_LisleyGomes_V2.R
 
 DATA: BIOL5504_gomes_dataset.csv
 
-I did a GLM model with negative binomial family based on the residual distribution that I got from last week.
+I performed a GLM model with negative binomial family based on the residual distribution that I got from last week.
 
-#H1 =  The beef consumption in kg is different among gender of participants across ages.
+#H1 =  The beef consumption in kg is different among gender of participants and across ages.
 
 
 #Explain what the R output is telling you about your data, in relation to your hypothesis.
 
-#Explanation = The beef consumption seems to be significant related to the age and gender.As my gender variable is categorical, my female gender is set as intercept. The beef consumption seen to depend on the gender, and this relationship is significant different when comparing across ages.
+#Explanation = The beef consumption seems to be significant related to the age and gender.As my gender variable is categorical, my female gender is set as intercept. The beef consumption seems to be depend on the gender, and this relationship is significantly different when comparing across ages.
 
-Then, I plot my observed data and predict data overlap to see if they fits appropriately. I used predict function to see if my observed data fits well with predict values.
+Then, I plotted my observed data and predicted data overlap to see if they fitted appropriately. I used predict function to see if my observed data fitted well with predict values.
 
 WEEK 11##
 CODE : Week11_LisleyGomes.R
