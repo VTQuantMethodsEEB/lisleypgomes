@@ -33,6 +33,7 @@ mod<-lm(beef_kg_consumed~gender, data=amazon_data);summary(mod)
 #Examine the assumptions of linearity (using tests and diagnostic plots)___####
 
 plot(mod)
+##what is this telling you?
 
 hist(resid(mod))
 shapiro.test(sample(resid(mod), 500))#get normally by using a sample from my data
@@ -75,15 +76,15 @@ summary(allEffects(mod_inter))
 
 #make a new dataframe
 new.dat <- with(amazon_data,expand.grid(gender=levels(gender), 
-                                   age=seq(min(age),max(age), by=1)))
+                                   age=seq(min(age, na.rm=T),max(age, na.rm=T), by=1)))
 
 #predict beef consumed using new data frame
 new.dat$beef_kg_consumed <- predict(mod_inter,newdata=new.dat)
 
 #additive model
 ggplot(new.dat,aes(x=age,y=beef_kg_consumed,colour=gender))+ 
-  geom_line(aes(group=gender))+ 
-  geom_point(data=amazon_data, aes(x=age,y=beef_kg_consumed,colour = gender)) 
+  geom_point(data=amazon_data, aes(x=age,y=beef_kg_consumed,colour = gender)) +
+  geom_line(aes(group=gender))
 
 #interactive model 
 ggplot(amazon_data,aes(x=gender,y=beef_kg_consumed))+ 
@@ -93,6 +94,6 @@ ggplot(amazon_data,aes(x=gender,y=beef_kg_consumed))+
 ggplot(new.dat,aes(x=age,y=beef_kg_consumed,colour=gender))+ 
   geom_line(aes(group=gender))+ 
   geom_point(data=amazon_data, aes(x=age,y=beef_kg_consumed,colour = gender)) 
-
+##it looks like you only predicted the interactive model, not the additive model
 
 plot(allEffects(mod_inter))
