@@ -14,7 +14,8 @@ amazon_data<-na.omit(amazon_data)
 
 mod.glm = glm.nb(beef_kg_consumed~age+gender, data=amazon_data)
 summary(mod.glm)
-
+#you have some partial numbers here (0.5 pounds) so not really count data per se
+ 
 #Explain what the R output is telling you about your data, in relation to your hypothesis.
 #(Hint: you can use emmeans, effects, relevel, or predict to help you.)
 

@@ -36,6 +36,7 @@ anova(c1,c2,c3,c4,test = "LRT")
 #Based on the likelihood ratio test, gender model is my best model that explained 
 #the relationship between beef consumption and gender across ages.
 
+#the interactive model is actually best here
 
 #AIC selection model
 n1 = glm.nb(beef_kg_consumed~gender,data = amazon_data)
